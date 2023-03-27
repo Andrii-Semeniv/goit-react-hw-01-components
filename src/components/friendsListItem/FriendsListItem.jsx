@@ -1,10 +1,10 @@
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 import css from './FriendsListItem.module.css';
 
-export const FriendsListItem = ({ avatar, name, isOnline, id }) => {
+export const FriendsListItem = ({ avatar, name, isOnline }) => {
   return (
-    <li class="item" key={id}>
+    <li class="item">
       {isOnline ? (
         <span className="true"></span>
       ) : (
@@ -15,4 +15,10 @@ export const FriendsListItem = ({ avatar, name, isOnline, id }) => {
       <p class="name"> {name}</p>
     </li>
   );
+};
+
+FriendsListItem.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
 };

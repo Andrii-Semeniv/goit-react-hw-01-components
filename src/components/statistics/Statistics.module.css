@@ -1,3 +1,6 @@
 .statistics {
   margin-bottom: 15px;
 }
+.stat-list {
+  display: flex;
+}
