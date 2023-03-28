@@ -4,15 +4,16 @@ import css from './FriendsListItem.module.css';
 
 export const FriendsListItem = ({ avatar, name, isOnline }) => {
   return (
-    <li class="item">
+    <li className={css.item}>
       {isOnline ? (
-        <span className="true"></span>
+        <span className={css.true}></span>
       ) : (
-        <span className="false"></span>
+        <span className={css.false}></span>
       )}
-
-      <img class="avatar" src={avatar} alt="User avatar" width="48" />
-      <p class="name"> {name}</p>
+      <div>
+        <img src={avatar} alt="User avatar" width="48" />
+        <p> {name}</p>
+      </div>
     </li>
   );
 };

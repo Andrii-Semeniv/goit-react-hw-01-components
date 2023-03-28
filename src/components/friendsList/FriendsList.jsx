@@ -5,7 +5,7 @@ import { FriendsListItem } from '../friendsListItem/FriendsListItem';
 
 function FriendsList({ friends }) {
   return (
-    <section>
+    <section className={css.section}>
       <ul className={css.friendsList}>
         {friends.map(({ avatar, name, isOnline, id }) => (
           <FriendsListItem

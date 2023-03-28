@@ -1,3 +1,15 @@
+.section {
+  margin-left: 50px;
+}
+
 .friendsList {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+
+  gap: 15px;
+  max-width: 300px;
+  margin-bottom: 30px;
+  margin-left: 70px;
 }

@@ -1,0 +1,17 @@
+.transaction-history {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+  width: 700px;
+
+  text-align: center;
+  border: 1px solid black;
+}
+
+.transaction-history tbody tr:nth-of-type(2n) {
+  background-color: #a09c9c;
+}
+.head {
+  width: 100%;
+  background-color: rgb(154, 154, 206);
+}
